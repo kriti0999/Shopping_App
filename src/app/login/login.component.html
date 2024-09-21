@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class=" d-flex justify-content-center">
+        <div class="col">
+            <div class="login-card">
+                <div class="login-header">
+                    <h1>Welcome Back</h1>
+                </div>
+                <form ngNativeValidate>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input name="username" [(ngModel)]="username" type="text" class="form-control" id="username"
+                            placeholder="Username" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        <input name="password" [(ngModel)]="password" type="password" class="form-control" id="password"
+                            placeholder="Password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button (click)="onLogin()" type="submit" class="btn btn-primary btn-login w-100">
+                        <i class="fas fa-sign-in-alt me-2"></i>Log In
+                    </button>
+                </form>
+                <div class="text-center mt-3">
+                    <a class="text-muted forgot-password">
+                        <i class="fas fa-question-circle me-2"></i>Forgot password?
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
